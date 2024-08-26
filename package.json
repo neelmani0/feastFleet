@@ -1,0 +1,30 @@
+{
+  "name": "neel_rct_app",
+  "version": "1.0.0",
+  "description": "this my app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neelmani0?tab=repositories"
+  },
+  "author": "Neelmani",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.24.8",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router-dom": "^6.26.1"
+  }
+}
+ 

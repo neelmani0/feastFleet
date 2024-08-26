@@ -1,2 +1,52 @@
 # feastFleet
-It is an e-commerce website to delivers different types of products like electronic gadgets and bags etc. Designed and implemented a responsive, user-friendly interface. Built dynamic product pages that displayed detailed information, reviews, and real-time inventory, improving customer engagement and conversion rates.
+
+
+- I made [🚀 feastFleet 😍](https://feastFleet.netlify.app//) from scratch using React.js and Parcel.js, which is the part of this course.
+
+
+
+## To Clone this Repository
+
+You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
+
+```bash
+  git clone "https://github.com/neelmani0/feastFleet"
+```
+ 
+Go to the project directory
+
+```bash
+  cd feastFleet
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+ After doing this this application should now be running on `localhost`. If you want to Fork repository and want to run locally, follow this guidelines [Fork and Clone Github Repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+# 
+
+## Key Features
+◉ Multi Select Cuisines Based Restaurant Filter.
+◉ Search Based Restaurants Filter.
+◉ Shimmer UI
+◉ CORS Extension For Fetching Swiggy Live API Data from Swiggy Public APIs.
+◉ Tailwind CSS 
+◉ Class Based Components.
+◉ React Router DOM for routing & navigation
+◉ Lazy Loading
+◉ Context API
+◉ Lifting The State Up
+
+## 🔗 Let's Connect
+
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/neel-mani-2114591b2/)
