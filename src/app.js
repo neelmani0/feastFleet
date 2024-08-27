@@ -12,19 +12,21 @@ import Profile from './component/Profile';
 //import Instamart from './component/Instamart';
 import Shimmer from './component/Shimmer';
 import Cart from './component/Cart';
+import { Provider } from 'react-redux';
+import store from "./utils/store"
 
  
 const Instamart = lazy(()=>import("./component/Instamart"));
 
 const AppLayout = ()=>{
    return(
-      <div>
-         
+      
+    <Provider store= {store}>    
          <Header/>
          <Outlet/>
          <Footer/> 
 
-      </div>
+      </Provider>
    )
 };
 

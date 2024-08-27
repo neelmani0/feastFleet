@@ -3,6 +3,7 @@ import logo from './logo.jpg';
 import { Link } from 'react-router-dom';
 import useOnline from '../utils/useOnline';
 import UserContext from '../utils/UserContext';
+import { useSelector } from 'react-redux';
 
 const logedInUser = () => {
 return true;
@@ -19,6 +20,8 @@ const Title = ()=>(
  const Header = ()=>{
    const [isLogedIn, setILogedIn] = useState(false);
    const {user} = useContext(UserContext);
+    const cartItems = useSelector(store => store.cart.items);
+
     return(
      <div  className='flex justify-between bg-pink-50 shadow-md '>
          <Title />
@@ -27,7 +30,7 @@ const Title = ()=>(
           <li className='px-2  hover:text-gray-500 hover:text-xl'><Link to="/">Home</Link></li>
           <li className='px-2  hover:text-gray-500 hover:text-xl'><Link to="/about">About</Link></li>
           <li className='px-2  hover:text-gray-500 hover:text-xl'><Link to="/contact">Contact</Link></li>
-          <li className='px-2  hover:text-gray-500 hover:text-xl'><Link to="/cart">Cart</Link></li>
+          <li className='px-2  hover:text-gray-500 hover:text-xl'><Link to="/cart">Cart - {cartItems.length}Items</Link></li>
           <li className='px-2  hover:text-gray-500 hover:text-xl'><Link to="/instamart">Instamart</Link></li>
           <li className='px-2 '><h3 >{useOnline ? "✅" : "🔴"} </h3></li>
        </ul>

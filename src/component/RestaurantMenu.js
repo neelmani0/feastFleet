@@ -9,6 +9,10 @@ import {
 } from "./Constant";
 import Shimmer from "./Shimmer";
 import useRestaurant from "../utils/useRestaurant";
+import { addItem } from "../utils/cartSlice";
+import { useDispatch } from "react-redux";
+
+
 const RestaurantMenu = ()=>{
     const {resId} = useParams();
     const [restaurant, menuItems] = useRestaurant(
@@ -17,7 +21,13 @@ const RestaurantMenu = ()=>{
         RESTAURANT_TYPE_KEY,
         MENU_ITEM_TYPE_KEY
     );  
+
+const dispatch = useDispatch();    
     
+const handleAddItem = ()=>{
+    dispatch(addItem("Apple"));
+}
+
     return (!restaurant) ? <Shimmer/> : (
         <div className="restaurant-menu mt-2 min-h-screen w-auto ">
             <div className="restaurant-summary flex h-52 justify-center align-middle overflow-y-hidden bg-slate-800 text-cyan-50 ">
@@ -57,7 +67,9 @@ const RestaurantMenu = ()=>{
                                     <div className="flex justify-start text-gray-500">{item?.description}
                                     </div>
                                     <div className="text-right ">
-                                        <button className="add-btn  justify-center pr-1.5 w-16 h-8 bg-orange-700   text-end rounded-lg"> ADD+</button>
+                                        <button className="add-btn  justify-center pr-1.5 w-16 h-8 bg-orange-700   text-end rounded-lg"
+                                        onClick={()=>{handleAddItem()}}
+                                        > ADD+</button>
                                     </div>
                                 </div>
                                 <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
