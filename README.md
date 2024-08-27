@@ -1,7 +1,7 @@
 # feastFleet
 
 
-- I made [🚀 feastFleet 😍](https://feast-fleet-5ju9.vercel.app/) from scratch using React.js and Parcel.js, which is the part of this course.
+- I made [🚀 feastFleet 😍](https://feast-fleet-5ju9.vercel.app/) from scratch using React.js and Parcel.js, which is the part of this project.
 
 
 
