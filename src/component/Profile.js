@@ -20,20 +20,22 @@ const Profile = () => {
             
             {userInfo ? ( // Check if userInfo is available
                 <>
+                 <div className="ml-[563px]">
                     <img
                         className="rounded-full w-[150px] h-[150px] border-none align-middle"
                         src={userInfo.avatar_url}
                         alt={userInfo.name} // Add alt text for accessibility
                     />
-                    <h2>Name: {userInfo.name}</h2>
-                    <h2>Location: {userInfo.location}</h2>
+                    <h2 className="ml-4">Name: {userInfo.name}</h2>
+                    <h2 className="ml-4">Location: {userInfo.location}</h2>
+                </div>
                 </>
                 
             ) : (
                 <p>Loading...</p> // Show a loading message while data is being fetched
             )}
              </div>
-            <div className="w-full h-auto mt-5 p-14 text-black mb-2 font-Poppins sm:p-4 ">
+            <div className="w-full h-auto mt-5 p-14 text-black mb-2 font-Poppins sm:p-4 text-center ">
                 <h1 className="font-bold text text-4xl">
                     Some important information about project
                 </h1>
@@ -42,14 +44,14 @@ const Profile = () => {
                     <li className="font-bold text-2xl md:text-lg sm:text-base">
                         😎 Key Features
                     </li>
-                    <li>📌 Shimmer UI for Better UserExperience</li>
-                    <li>📌 Search Feature </li>
-                    <li>📌 Cart Feature</li>
-                    <li>📌 Checking network connection</li>
-                    <li>📌 Forms to contact</li>
-                    <li>📌 Single page application</li>
+                    <li>❥ Shimmer UI for Better UserExperience</li>
+                    <li>❥ Search Feature </li>
+                    <li>❥ Cart Feature</li>
+                    <li>❥ Checking network connection</li>
+                    <li>❥ Forms to contact</li>
+                    <li>❥ Single page application</li>
                     <li>
-                        📌 Implemented Lazy Loading or OnDemand Loading on This
+                    ❥ Implemented Lazy Loading or OnDemand Loading on This
                         Router
                     </li>
                 </ul>

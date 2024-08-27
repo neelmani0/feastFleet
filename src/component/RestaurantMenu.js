@@ -24,8 +24,8 @@ const RestaurantMenu = ()=>{
 
 const dispatch = useDispatch();    
     
-const handleAddItem = ()=>{
-    dispatch(addItem("Apple"));
+const handleAddItem = (item)=>{
+    dispatch(addItem(item));
 }
 
     return (!restaurant) ? <Shimmer/> : (
@@ -68,7 +68,7 @@ const handleAddItem = ()=>{
                                     </div>
                                     <div className="text-right ">
                                         <button className="add-btn  justify-center pr-1.5 w-16 h-8 bg-orange-700   text-end rounded-lg"
-                                        onClick={()=>{handleAddItem()}}
+                                        onClick={()=>{handleAddItem(item)}}
                                         > ADD+</button>
                                     </div>
                                 </div>
